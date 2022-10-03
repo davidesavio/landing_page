@@ -20,7 +20,9 @@ nav,
 .intro-text,
 .intro-img,
 .links,
-.cards {
+.cards,
+.quotation,
+.quotation>div {
     display: flex;
 }
 
@@ -44,9 +46,15 @@ nav {
     align-items: center;
 }
 
+.intro {
+    gap: 50px;
+    height: 170px;
+}
+
 .intro-text {
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 .intro-text > h1 {
@@ -55,7 +63,8 @@ nav {
 }
 
 .intro-text > p {
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .intro-text button {
@@ -67,13 +76,12 @@ nav {
 }
 
 .intro-img {
-    width: 600px;
-    height: 150px;
+    width: auto;
     background-color: rgb(83, 81, 94);
-    margin-left: 50px;
     font-weight: 300;
     justify-content: center;
     align-items: center;
+    flex: 1
 }
 
 /* INFO */
@@ -109,3 +117,27 @@ nav {
     text-align: center;
     margin-top: 5px;
 }
+
+/* QUOTATION */
+
+.quotation {
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-color: #e5e7eb;
+}
+
+.quotation > div {
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 450px;
+}
+
+.quotation p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
