@@ -22,7 +22,11 @@ nav,
 .links,
 .cards,
 .quotation,
-.quotation>div {
+.quotation>div,
+.signup,
+.signup-container,
+.signup-button,
+footer {
     display: flex;
 }
 
@@ -73,6 +77,14 @@ nav {
     color: white;
     border-radius: 5px;
     border: none;
+}
+
+.intro-text button:hover {
+    background-color: #74a7f8;
+}
+
+.intro-text button:active {
+    background-color: #4e6a96;
 }
 
 .intro-img {
@@ -139,5 +151,58 @@ nav {
     font-size: 20px;
 }
 
+/* SIGN UP */
+
+.signup {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.signup-container {
+    background-color: #3882f6;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.signup-button {
+    align-items: flex-end;
+}
+
+.signup-container button {
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #3882f6;
+}
+
+.signup-container button:hover {
+    background-color: #74a7f8;
+}
+
+.signup-container button:active {
+    background-color: #4e6a96;
+}
+
+.signup span {
+    font-size: 14;
+    font-weight: 100;
+}
+
+/* FOOTER */
+
+footer {
+    color: rgb(193, 193, 193);
+    font-weight: 100;
+    height: 100px;
+    background-color: #1f2937;
+    justify-content: center;
+    align-items: center;
+}
 
 
